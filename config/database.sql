@@ -1,13 +1,12 @@
 -- =====================================================================
 --  St. Mark's Laptop Tracking System — fresh-install schema
---  Import this file from phpMyAdmin (Import tab) on a brand-new database.
+--  Create an empty database first (e.g. via cPanel's MySQL Databases
+--  wizard, or phpMyAdmin), select it, then import this file from the
+--  phpMyAdmin Import tab. It does NOT create or switch databases itself,
+--  so it always imports into whichever database you have selected.
 --  The app auto-creates extra tables (settings, notifications_log,
 --  overdue_alerts) and adds new columns on first page load.
 -- =====================================================================
-
-CREATE DATABASE IF NOT EXISTS `laptop_tracking_system`
-    DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `laptop_tracking_system`;
 
 -- ----------------------------- USERS / STAFF -----------------------------
 CREATE TABLE IF NOT EXISTS `users` (
