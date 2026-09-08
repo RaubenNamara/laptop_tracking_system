@@ -1,0 +1,12 @@
+# Generated/user-uploaded content (contains real student photos + laptop images)
+uploads/*
+!uploads/.gitkeep
+
+# Generated QR code images (regenerated automatically per laptop)
+qrcodes/*
+!qrcodes/.gitkeep
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
